@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #111723;
+    --main-red: #ff4654;
+}
+
+/* formulario */
+
+body {
+    /* background: url('../media/img/login-form/background-image.gif') no-repeat fixed center center/cover; */
+    background: var(--main-red);
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.email-container {
+    margin-bottom: 20px;
+}
+
+.forgotten-password {
+    font-size: 14px;
+    margin: 4px 0 20px;
+    padding: 2px 0;
+}
+
+.sample-text {
+    font-size: 14px;
+    margin-top: 4px;
+}

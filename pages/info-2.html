@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="../styles/main-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="../styles/info-stylesheet.css">
+    <title>Dorohedoro | ANIME PLUS</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body style="background-image: url('../images/banner-image-2.jpg');">
+
+    <!-- barra de navegación -->
+
+    <nav>
+        <div class="navbar">
+            <a href="../index.html" class="logo">ANIME &#65291;</a>
+            <ul class="desktop-navbar">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ANIMES</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="login.html" class="login-button">INICIAR SESIÓN</a></li>
+            </ul>
+        </div>
+        <div class="mobile-navbar">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" name="" id="toggle">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ANIMES</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="login.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- cabecera -->
+
+    <header>
+        <div class="poster">
+            <img src="../images/poster-image-2.jpg" alt="">
+        </div>
+        <div class="details">
+            <h1>DOROHEDORO</h1>
+            <p>La historia gira en torno a Kaiman, quien no recuerda quién era antes de que un usuario de Magic lo transfigurara. Esta transformación lo dejó con la cabeza de un reptil y un deseo de descubrir la verdad sobre quién es realmente. Acompañado por Nikaido, su compañera, rastrea a los Usuarios de Magia en "The Hole" y se muerde sin ceremonias, esperando descubrir quién fue el que lo puso en este estado. Uno por uno, son testigos de este "segundo hombre" dentro de la cabeza de Kaiman, y después de sacarlos de su boca les hace una pregunta a todos ... "¿Qué dijo el tipo dentro de mi cabeza?"</p>
+            <a href="#" class="button">VER AHORA</a>
+        </div>
+    </header>
+
+    <!-- scripts -->
+    
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 0) {
+                $(".navbar").addClass("dark-navbar-shadow");
+            } else {
+                $(".navbar").removeClass("dark-navbar-shadow");
+            }
+        });
+    </script>
+
+</body>
+</html>

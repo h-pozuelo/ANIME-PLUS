@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #111723;
+    --main-red: #ff4654;
+}
+
+/* formulario */
+
+body {
+    /* background: url('../media/img/signup-form/background-image.gif') no-repeat fixed center center/cover; */
+    background: var(--main-red);
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.email-container {
+    margin-bottom: 20px;
+}
+
+.username-container {
+    margin-bottom: 20px;
+}
+
+.terms-and-conditions {
+    font-size: 12px;
+    margin: 20px 0;
+    padding: 2px 0;
+}
+
+.sample-text {
+    font-size: 14px;
+    margin-top: 8px;
+    padding: 2px 0;
+}

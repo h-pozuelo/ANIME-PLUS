@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #111723;
+    --main-red: #ff4654;
+}
+
+/* cabecera */
+
+header {
+    background: var(--main-red);
+    height: 100vh;
+    min-height: 900px;
+    padding: 100px 5% 0;
+    position: relative;
+    width: 100%;
+}
+
+header h1 {
+    color: #ffffff;
+    margin: 90px 0 40px 0;
+    width: 55%;
+}
+
+header .button {
+    background: #ffffff;
+    color: var(--main-red);
+    margin-bottom: 135px;
+}
+
+header p {
+    color: #ffffff;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.desktop-image {
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 65%;
+}
+
+.mobile-image {
+    bottom: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+/* contenido destacado */
+
+.featured {
+    margin-bottom: 160px;
+    padding: 0 5%;
+    width: 100%;
+}
+
+.title-section {
+    margin: 50px 0 20px 0;
+}
+
+.title-section h2, .title-section a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.title-section a {
+    color: var(--main-red);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+.featured ul {
+    display: flex;
+    width: 100%;
+}
+
+.featured ul li img {
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+    margin: 4%;
+    width: 92%;
+}
+
+/* llamada a la acción */
+
+.call-to-action {
+    margin: 0 auto 200px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.call-to-action h1 {
+    margin-bottom: 40px;
+}
+
+.call-to-action h1 span {
+    color: var(--main-red);
+}
+
+.call-to-action .button {
+    background: var(--main-red);
+    color: #ffffff;
+}
+
+/* responsive web */
+
+@media only screen and (max-width: 1280px) {
+    header {
+        height: 100vh;
+        min-height: 1000px;
+    }
+    header h1 {
+        margin: 50px 0 40px 0;
+    }
+    header .button {
+        margin-bottom: 80px;
+    }
+    .call-to-action {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    header h1 {
+        width: 100%;
+    }
+    .desktop-image {
+        display: none;
+    }
+    .mobile-image {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    h1 {
+        font-size: 36px;
+    }
+    .featured ul {
+        flex-direction: column;
+    }
+}

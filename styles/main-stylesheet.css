@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #111723;
+    --main-red: #ff4654;
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-black);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p, li, a {
+    color: var(--main-black);
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 200px;
+}
+
+/* barra de navegación */
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    color: #ffffff;
+    line-height: 100px;
+}
+
+.navbar {
+    padding: 0 5%;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+.login-button {
+    background: #ffffff;
+    border-radius: 3px;
+    color: var(--main-red);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 9px 25px;
+}
+
+.mobile-navbar {
+    display: none;
+}
+
+label {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0 40px 0 0;
+    padding-right: 5%;
+    position: absolute;
+    right: 0;
+    top: 32px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked ~ ul {
+    display: block;
+}
+
+.mobile-navbar ul {
+    background: #ffffff;
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+    display: none;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.mobile-navbar ul li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    margin: 0;
+    width: 100%;
+}
+
+.mobile-navbar ul li a {
+    color: var(--main-black);
+}
+
+.navbar-shadow {
+    background: var(--main-red);
+    box-shadow: 0 3px 5px 0 rgba(0,0,0,0.2);
+}
+
+/* pie de página */
+
+footer {
+    padding: 0 5%;
+    width: 100%;
+}
+
+footer a {
+    color: var(--main-black);
+}
+
+footer ul {
+    float: right;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 50px;
+}
+
+footer ul, .copyright {
+    display: inline-block;
+    line-height: 80px;
+}
+
+.copyright a, .copyright p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.copyright p {
+    margin-left: 20px;
+}
+
+/* responsive web */
+
+@media only screen and (max-width: 1280px) {
+    footer ul {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
+    }
+    footer ul {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .copyright {
+        display: block;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
+    }
+    nav ul li {
+        margin: 0;
+    }
+    footer ul li {
+        display: none;
+    }
+}

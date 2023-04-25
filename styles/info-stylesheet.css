@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+    --main-black: #111723;
+    --main-red: #ff4654;
+}
+
+* {
+    border: none;
+    box-sizing: border-box;
+    font-size: 100%;
+    margin: 0;
+    outline: none;
+    padding: 0;
+    vertical-align: baseline;
+}
+
+body {
+    background: var(--main-black);
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--main-black);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+p, li, a {
+    color: var(--main-black);
+    font-size: 16px;
+    font-weight: 400;
+    list-style: none;
+    text-decoration: none;
+}
+
+.button {
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    width: 200px;
+}
+
+/* barra de navegación */
+
+.login-button {
+    color: var(--main-black);
+}
+
+.dark-navbar-shadow {
+    background-color: var(--main-black);
+}
+
+/* cabecera */
+
+body {
+    background: url('') no-repeat fixed center center/cover;
+}
+
+header {
+    align-items: center;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 100px 5% 0;
+    position: relative;
+    width: 100%;
+}
+
+header h1, header p {
+    color: #ffffff;
+}
+
+header .poster img {
+    width: 500px;
+}
+
+header .details {
+    margin-left: 4%;
+    max-height: 750px;
+}
+
+header .details p {
+    margin: 0 0 20px;
+}
+
+header .button {
+    background: var(--main-red);
+    color: #ffffff;
+}
+
+/* responsive web */
+
+@media only screen and (max-width: 960px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
+    }
+    header {
+        flex-direction: column;
+    }
+    header .details {
+        margin-left: 0;
+    }
+    header .poster {
+        max-width: 500px;
+        width: 100%;
+    }
+    header .poster img {
+        width: 100%;
+    }
+    header .details p {
+        text-align: justify;
+    }
+    header .details .button {
+        display: block;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .desktop-navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: block;
+    }
+    nav ul li {
+        margin: 0;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/main-stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="styles/index-stylesheet.css">
+    <title>Inicio | ANIME PLUS</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- barra de navegación -->
+
+    <nav>
+        <div class="navbar">
+            <a href="#" class="logo">ANIME &#65291;</a>
+            <ul class="desktop-navbar">
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ANIMES</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="pages/login.html" class="login-button">INICIAR SESIÓN</a></li>
+            </ul>
+        </div>
+        <div class="mobile-navbar">
+            <label for="toggle">&#9776;</label>
+            <input type="checkbox" name="" id="toggle">
+            <ul>
+                <li><a href="#">INICIO</a></li>
+                <li><a href="#">ANIMES</a></li>
+                <li><a href="#">SOBRE NOSOTROS</a></li>
+                <li><a href="pages/login.html">INICIAR SESIÓN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- cabecera -->
+
+    <header>
+        <h1>Una forma simple pero elegante de explorar contenido anime a través de Internet.</h1>
+        <a href="#" class="button">ACCEDER</a>
+        <p>Contamos con un gran catálogo de contenido anime. Nuestra <br>suscripción mensual le da acceso ilimitado a nuestra gran <br>biblioteca de contenido.</p>
+        <p><b>¡Diga adios a la espera!</b> Obtenga acceso exclusivo a <br>contenido anime en fecha de estreno.</p>
+        <img src="images/desktop-image.png" alt="" class="desktop-image">
+        <img src="images/mobile-image.png" alt="" class="mobile-image">
+    </header>
+
+    <!-- contenido destacado -->
+
+    <div class="featured">
+        <div class="title-section">
+            <h2>CONTENIDO DESTACADO</h2>
+            <a href="#">VER MÁS</a>
+        </div>
+        <ul>
+            <li><a href="pages/info-1.html"><img src="images/poster-image-1.jpg" alt=""></a></li>
+            <li><a href="pages/info-2.html"><img src="images/poster-image-2.jpg" alt=""></a></li>
+            <li><a href="pages/info-3.html"><img src="images/poster-image-3.jpg" alt=""></a></li>
+            <li><a href="pages/info-4.html"><img src="images/poster-image-4.jpg" alt=""></a></li>
+        </ul>
+        <ul>
+            <li><a href="pages/info-5.html"><img src="images/poster-image-5.jpg" alt=""></a></li>
+            <li><a href="pages/info-6.html"><img src="images/poster-image-6.jpg" alt=""></a></li>
+            <li><a href="pages/info-7.html"><img src="images/poster-image-7.jpg" alt=""></a></li>
+            <li><a href="pages/info-8.html"><img src="images/poster-image-8.jpg" alt=""></a></li>
+        </ul>
+    </div>
+
+    <!-- llamada a la acción -->
+
+    <div class="call-to-action">
+        <h1>Vea sus animes favoritos y explore contenido similar. Comience hoy por tan solo <span>5.99€</span> al mes.</h1>
+        <a href="#" class="button">SUSCRIBIRSE</a>
+    </div>
+
+    <!-- pie de página -->
+
+    <footer>
+        <div class="copyright">
+            <a href="#" class="logo">ANIME &#65291;</a>
+            <p>Copyright &copy; 2020 ANIME PLUS, Inc.</p>
+        </div>
+        <ul>
+            <li><a href="#">CUENTA</a></li>
+            <li><a href="#">SOPORTE TÉCNICO</a></li>
+            <li><a href="#">CONDICIONES DE USO</a></li>
+            <li><a href="#">PRIVACIDAD</a></li>
+        </ul>
+    </footer>
+
+    <!-- scripts -->
+    
+    <script>
+        $(window).on("scroll", function() {
+            if($(window).scrollTop() > 0) {
+                $(".navbar").addClass("navbar-shadow");
+            } else {
+                $(".navbar").removeClass("navbar-shadow");
+            }
+        });
+    </script>
+
+</body>
+</html>
